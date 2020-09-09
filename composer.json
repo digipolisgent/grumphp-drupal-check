@@ -1,5 +1,5 @@
 {
-    "name": "metadrop/grumphp-drupal-check",
+    "name": "digipolisgent/grumphp-drupal-check",
     "description": "Execute drupal check in a grumphp task.",
     "type": "library",
     "require": {
