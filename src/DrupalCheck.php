@@ -34,8 +34,10 @@ class DrupalCheck extends AbstractExternalTask
       $resolver = new OptionsResolver();
       $resolver->setDefaults([
         'drupal_root' => null,
+        'exclude_dir' => null,
       ]);
       $resolver->addAllowedTypes('drupal_root', ['string', 'null']);
+      $resolver->addAllowedTypes('exclude_dir', ['string', 'null']);
 
       return $resolver;
   }
@@ -66,6 +68,7 @@ class DrupalCheck extends AbstractExternalTask
     $arguments->add('--deprecations');
     $arguments->add('--no-progress');
     $arguments->addOptionalArgument('--drupal-root=%s', $options['drupal_root']);
+    $arguments->addOptionalArgument('--exclude-dir=%s', $options['exclude_dir']);
     $arguments->addFiles($files);
     $process = $this->processBuilder->buildProcess($arguments);
     $process->run();

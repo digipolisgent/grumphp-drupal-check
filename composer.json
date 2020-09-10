@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "phpro/grumphp": "^0.19",
-        "mglaman/drupal-check": "^1.1.2"
+        "mglaman/drupal-check": "^1.1.3"
     },
     "authors": [
         {
