@@ -28,4 +28,4 @@ tasks:
 ```
 Optionally, configure the path to the Drupal root. This fallback option can be used if drupal-check could not identify Drupal root from the provided path(s). This is useful when testing a module as opposed to a Drupal installation.
 
-Optionally, configure exclude directories. Wildcards work. Separate multiple excluded directories with commas, no spaces. e.g.: */tests/codeception/acceptance/*.php
+Optionally, configure exclude files and directories. Wildcards work. Separate multiple excluded directories with commas, no spaces. e.g.: */tests/codeception/acceptance/*.php
